@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Maurizio Dominici" />
-    <title></title>
+    <title>Spotify</title>
 
     <!-- ^ ===FAVICON=== -->
 
@@ -25,13 +25,61 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- Sopra -->
       <div id="top-content">
+        <!-- Sidebar Sinistra -->
         <div id="sidebar">
-          <div class="container"></div>
-        </div>
+          <div class="container">
+            <!-- top-sidebar -->
+            <div class="top-sidebar">
+              <!-- logo -->
+              <div class="logo">
+                <img
+                  class="logo-xs"
+                  src="./img/logo-small.svg"
+                  alt="logo-small"
+                />
+                <img
+                  class="logo-xl hidden"
+                  src="./img/logo.svg"
+                  alt="logo-hidden"
+                />
+              </div>
 
+              <!-- home -->
+              <div class="home">
+                <img src="./img/home.svg" alt="home" />
+                <!-- <span class="home-script hidden">Home</span> -->
+              </div>
+
+              <!-- search -->
+              <div class="search">
+                <img src="./img/search.svg" alt="search" />
+                <!-- <span class="search-script hidden"></span> -->
+              </div>
+
+              <!-- library -->
+              <div class="library">
+                <img src="./img/libreria.svg" alt="library" />
+                <!-- <span class="library-script hidden"></span> -->
+              </div>
+            </div>
+            <!-- center-sidebar -->
+            <div class="center-sidebar hidden"></div>
+            <!-- bottom-sidebar -->
+            <div class="bottom-sidebar">
+              <!-- user -->
+              <div class="user">
+                <img src="./img/profile.svg" alt="user" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contenuto -->
         <div id="main-content"></div>
       </div>
+
+      <!-- Sotto -->
       <div id="player"></div>
     </div>
   </body>

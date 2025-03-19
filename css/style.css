@@ -37,6 +37,10 @@ ul {
   background-color: #ff000022;
 } */
 
+.hidden {
+  display: none;
+}
+
 .container {
   max-width: 1180px;
   margin-left: auto;
@@ -55,7 +59,9 @@ ul {
 .row {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 1rem;
+
+  /* debug */
+  /* row-gap: 1rem; */
 
   margin-left: -0.5rem;
   margin-right: -0.5rem;
@@ -75,7 +81,7 @@ ul {
 /* !TOP-CONTENT */
 
 #top-content {
-  height: calc(100vh - var(--player-height));
+  display: flex;
 
   /* debug */
   background-color: #141922;
@@ -86,14 +92,22 @@ ul {
 #sidebar {
   height: calc(100vh - var(--player-height));
   width: var(--sidebar-width);
+  color: white;
+
   /* debug */
   background-color: #000000;
+}
+
+#sidebar .top-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* !MAIN-CONTENT */
 
 #main-content {
-  height: calc(100vh - var(--player-height));
+  height: calc(100% - var(--player-height));
   width: calc(100% - var(--sidebar-width));
 
   /* debug */
@@ -114,5 +128,17 @@ ul {
 @media screen and (min-width: 400px) {
   :root {
     --sidebar-width: 135px;
+  }
+
+  #sidebar .logo-xs {
+    display: none;
+  }
+
+  #sidebar .logo-xl {
+    display: block;
+  }
+
+  #sidebar .home {
+    display: inline-block;
   }
 }
