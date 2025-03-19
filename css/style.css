@@ -98,10 +98,24 @@ ul {
   background-color: #000000;
 }
 
+#sidebar .row {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
 #sidebar .top-sidebar {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-align: center;
+}
+
+#sidebar .top-sidebar img {
+  width: 70%;
+}
+
+#sidebar .center-sidebar {
+  flex-grow: 1;
 }
 
 /* !MAIN-CONTENT */
