@@ -70,33 +70,49 @@ ul {
   width: calc(100% / 2);
 }
 
-/* ?====mobile-xs view====*/
+/* ?========= mobile-xs view =========*/
+
+/* !TOP-CONTENT */
 
 #top-content {
   height: calc(100vh - var(--player-height));
 
   /* debug */
-  background-color: yellow;
+  background-color: #141922;
 }
+
+/* !SIDEBAR */
 
 #sidebar {
-  /* height: calc(100vh - 90px); */
+  height: calc(100vh - var(--player-height));
   width: var(--sidebar-width);
   /* debug */
-  background-color: green;
+  background-color: #000000;
 }
 
+/* !MAIN-CONTENT */
+
 #main-content {
-  /* height: calc(100vh - 90px); */
-  width: calc(100vw - var(--sidebar-width));
+  height: calc(100vh - var(--player-height));
+  width: calc(100% - var(--sidebar-width));
 
   /* debug */
   background-color: blue;
 }
 
+/* !PLAYER */
+
 #player {
-  height: 90px;
+  height: var(--player-height);
 
   /* debug */
-  background-color: purple;
+  background-color: #282828;
+}
+
+/* ? ========= mobile-s view ========= */
+
+@media screen and (min-width: 400px) {
+  :root {
+    --sidebar-width: 135px;
+  }
 }
