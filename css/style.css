@@ -209,7 +209,7 @@ ul {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 40px;
   padding: 0.7rem;
 
   /* debug */
@@ -270,6 +270,8 @@ ul {
 
 #player .time-media {
   display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 #player .time-up {
@@ -291,7 +293,23 @@ ul {
 }
 
 #player .settings {
+  color: #a3a3a3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   /* background-color: blue; */
+}
+
+#player .exterior-volume {
+  height: 3px;
+  min-width: 50px;
+  background-color: #808080;
+}
+
+#player .interior-volume {
+  height: 3px;
+  width: 22px;
+  background-color: #a3a3a3;
 }
 
 /* ? ========= mobile-s view ========= */
