@@ -32,7 +32,8 @@ ul {
 /* ^ ==================== UTILS ======================  */
 
 .debug {
-  height: 50px;
+  min-height: 50px;
+  min-width: 50px;
   border: 2px dashed red;
   background-color: #ff000022;
 }
@@ -127,7 +128,6 @@ ul {
   font-size: 0.8rem;
   color: white;
   font-weight: bold;
-  text-align: center;
 }
 
 #sidebar .icon-playlist {
@@ -205,9 +205,77 @@ ul {
 
 #player {
   height: var(--player-height);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0.7rem;
 
   /* debug */
   background-color: #282828;
+}
+
+#player .song-recap {
+  color: #a3a3a3;
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  /* background-color: yellow; */
+}
+
+#player .song-description {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#player .current-song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+#player .current-song h3 {
+  color: white;
+}
+
+#player .love-song {
+  display: flex;
+  flex-direction: column;
+}
+
+#player .sinister-xs {
+  width: 30px;
+}
+
+#player .media-player {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: green; */
+}
+
+#player .button-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+#player .time-media {
+  display: flex;
+}
+
+#player .time-up {
+}
+
+#player .settings {
+  /* background-color: blue; */
 }
 
 /* ? ========= mobile-s view ========= */
@@ -271,6 +339,22 @@ ul {
   }
 
   #sidebar .user-name {
+    display: block;
+  }
+
+  /* ^PLAYER */
+
+  #player .current-song {
+    display: block;
+  }
+}
+
+/* ?-----mobile-md view----- */
+
+@media screen and (min-width: 878px) {
+  /* ^PLAYER */
+
+  #player .love-song {
     display: block;
   }
 }
