@@ -209,7 +209,7 @@ ul {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   padding: 0.7rem;
 
   /* debug */
@@ -256,6 +256,7 @@ ul {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
   /* background-color: green; */
 }
@@ -272,6 +273,21 @@ ul {
 }
 
 #player .time-up {
+}
+
+#player .exterior-line {
+  height: 3px;
+  background-color: gray;
+  flex-grow: 1;
+
+  /* debug */
+  min-width: 50px;
+}
+
+#player .interior-line {
+  height: 3px;
+  background-color: #a3a3a3;
+  width: 70px;
 }
 
 #player .settings {
