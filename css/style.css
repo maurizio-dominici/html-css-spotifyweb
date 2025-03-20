@@ -109,10 +109,12 @@ ul {
 
 #sidebar .logo-xl {
   width: 150px;
+  padding-left: 15px;
 }
 
 #sidebar .tab-menu {
   width: 30px;
+  color: #a3a3a3;
 }
 
 #sidebar .playlist {
@@ -138,6 +140,16 @@ ul {
 
 #sidebar .user img {
   width: 20px;
+}
+
+#sidebar .playlist-title {
+  display: none;
+}
+
+#sidebar .playlist-title {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
 }
 
 /* !MAIN-CONTENT */
@@ -170,6 +182,13 @@ ul {
     align-items: flex-start;
   }
 
+  #sidebar .home,
+  .search,
+  .library {
+    display: flex;
+    align-items: center;
+  }
+
   #sidebar .logo-xs {
     display: none;
   }
@@ -178,7 +197,13 @@ ul {
     display: block;
   }
 
-  #sidebard #sidebar .home {
-    display: inline-block;
+  #sidebar .home-script,
+  .search-script,
+  .library-script {
+    display: block;
+  }
+
+  #sidebar .playlist {
+    display: block;
   }
 }
