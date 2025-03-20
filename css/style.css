@@ -32,7 +32,7 @@ ul {
 /* ^ ==================== UTILS ======================  */
 
 /* .debug {
-  min-height: 100px;
+  height: 50px;
   border: 2px dashed red;
   background-color: #ff000022;
 } */
@@ -76,8 +76,6 @@ ul {
   width: calc(100% / 2);
 }
 
-/* ?========= mobile-xs view =========*/
-
 /* !TOP-CONTENT */
 
 #top-content {
@@ -113,12 +111,43 @@ ul {
 }
 
 #sidebar .tab-menu {
+  flex-grow: 1;
   width: 30px;
   color: #a3a3a3;
 }
 
 #sidebar .playlist {
+  display: none;
+  color: #a3a3a3;
   flex-grow: 1;
+}
+
+#sidebar .playlist-title {
+  display: none;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#sidebar .icon-playlist {
+  display: none;
+}
+
+#sidebar .background-icon-playlist {
+  background-color: lightslategray;
+  padding: 10px;
+}
+
+#sidebar .playlist-menu {
+  display: none;
+  color: #a3a3a3;
+}
+
+#sidebar .playlist-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #sidebar .profile {
@@ -138,18 +167,28 @@ ul {
   border-radius: 50%;
 }
 
+#sidebar .profile {
+  color: #a3a3a3;
+}
+
+#sidebar .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 #sidebar .user img {
   width: 20px;
 }
 
-#sidebar .playlist-title {
+#sidebar .download-script {
   display: none;
 }
 
-#sidebar .playlist-title {
-  font-size: 0.8rem;
+#sidebar .user-name {
+  display: none;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* !MAIN-CONTENT */
@@ -182,6 +221,10 @@ ul {
     align-items: flex-start;
   }
 
+  #sidebar .tab-menu {
+    flex-grow: 0;
+  }
+
   #sidebar .home,
   .search,
   .library {
@@ -204,6 +247,30 @@ ul {
   }
 
   #sidebar .playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #sidebar .playlist-title {
+    display: block;
+  }
+
+  #sidebar .icon-playlist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #sidebar .playlist-menu {
+    display: block;
+  }
+
+  #sidebar .download-script {
+    display: contents;
+  }
+
+  #sidebar .user-name {
     display: block;
   }
 }
