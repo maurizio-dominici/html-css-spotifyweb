@@ -23,6 +23,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #a3a3a3;
 }
 
 ul {
@@ -68,10 +69,10 @@ ul {
   margin-right: -0.5rem;
 }
 
-[class*="col"] {
+/* [class*="col"] {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
+} */
 
 .col-1-2 {
   width: calc(100% / 2);
@@ -217,6 +218,62 @@ ul {
   padding: 10px;
   border: white solid 1px;
   border-radius: 18px;
+}
+
+#main-content .main-content-bottom {
+  padding: 1rem;
+}
+
+#main-content .option {
+  padding-bottom: 1rem;
+}
+
+#main-content .main-content-bottom h3 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+#main-content .main-content-bottom .list-option {
+  color: #a3a3a3;
+  font-size: 0.6rem;
+}
+
+/* #main-content .main-content-bottom .container {
+  padding: 1rem;
+} */
+
+#main-content .main-content-bottom .row {
+  justify-content: center;
+}
+
+#main-content .list-option li {
+  display: inline-block;
+  padding: 0.2rem;
+}
+
+#main-content .recently-played .row {
+  gap: 1rem;
+}
+
+#main-content .recently-played .row .col-variable {
+  width: 48%;
+}
+#main-content .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-content .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-content .card-content span {
+  color: #a3a3a3;
+
+  font-size: 0.6rem;
 }
 
 /* !PLAYER */
