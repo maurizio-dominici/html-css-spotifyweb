@@ -198,7 +198,25 @@ ul {
   width: calc(100% - var(--sidebar-width));
 
   /* debug */
-  background-color: blue;
+  /* background-color: blue; */
+}
+
+#main-content .main-content-top {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0.5rem;
+  background-color: #080b12;
+}
+
+#main-content .main-content-top button {
+  background-color: #080b12;
+  font-size: 0.6rem;
+  color: white;
+  padding: 10px;
+  border: white solid 1px;
+  border-radius: 18px;
 }
 
 /* !PLAYER */
