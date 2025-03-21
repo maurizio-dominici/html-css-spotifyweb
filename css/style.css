@@ -63,6 +63,7 @@ ul {
 .row {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 
   /* debug */
   /* row-gap: 1rem; */
@@ -264,7 +265,7 @@ ul {
   gap: 1rem;
 }
 
-#main-content .recently-played .row .col-variable {
+#main-content .row .col-variable {
   width: 48%;
 }
 #main-content .card {
@@ -285,10 +286,31 @@ ul {
   font-size: 0.6rem;
 }
 
+#main-content .daily-mix {
+  display: none;
+}
+
 #main-content .daily-mix span {
   color: #a3a3a3;
-
   font-size: 0.8rem;
+  padding-bottom: 20px;
+}
+
+#main-content .daily-mix .container {
+  margin-top: 1.2rem;
+}
+
+#main-content .daily-mix .row {
+  justify-content: flex-start;
+}
+
+#main-content .daily-mix.circle {
+  display: none;
+}
+
+#main-content .daily-mix.circle .card-top {
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 /* !PLAYER */
@@ -483,13 +505,33 @@ ul {
 @media screen and (min-width: 878px) {
   /* ^MAIN-CONTENT */
 
-  #main-content .recently-played .col-variable {
-    width: 24%;
+  #main-content .daily-mix {
+    display: block;
+  }
+
+  #main-content .recently-played .row {
+    justify-content: flex-start;
+  }
+
+  #main-content .row .col-variable {
+    width: 23%;
   }
 
   /* ^PLAYER */
 
   #player .love-song {
     display: block;
+  }
+}
+
+/* ?mobile-lg view  */
+
+@media screen and (min-width: 1140px) {
+  #main-content .daily-mix.circle {
+    display: block;
+  }
+
+  #main-content .row .col-variable {
+    width: 15%;
   }
 }
