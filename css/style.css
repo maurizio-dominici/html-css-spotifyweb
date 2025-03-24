@@ -65,23 +65,15 @@ ul {
   flex-wrap: wrap;
   gap: 1rem;
 
-  /* debug */
-  /* row-gap: 1rem; */
-
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
-
-/* [class*="col"] {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-} */
 
 .col-1-2 {
   width: calc(100% / 2);
 }
 
-/* !TOP-CONTENT */
+/* !==================== TOP-CONTENT ====================*/
 
 #top-content {
   height: calc(100% - var(--player-height));
@@ -91,7 +83,7 @@ ul {
   background-color: #141922;
 }
 
-/* !SIDEBAR */
+/* !====================== SIDEBAR ======================*/
 
 #sidebar {
   height: calc(100vh - var(--player-height));
@@ -153,7 +145,6 @@ li:hover {
 }
 
 #sidebar .active {
-  margin-left: ;
   border-left: limegreen 3px solid;
 }
 
@@ -236,16 +227,13 @@ li:hover {
   font-weight: 700;
 }
 
-/* !MAIN-CONTENT */
+/* !=================== MAIN-CONTENT ===================*/
 
 #main-content {
   height: var(--main-content-height);
 
   width: calc(100% - var(--sidebar-width));
   overflow-y: auto;
-
-  /* debug */
-  /* background-color: blue; */
 }
 
 #main-content .active {
@@ -303,10 +291,6 @@ li:hover {
   color: white;
   cursor: pointer;
 }
-
-/* #main-content .main-content-bottom .container {
-  padding: 1rem;
-} */
 
 #main-content .main-content-bottom .row {
   justify-content: center;
@@ -395,7 +379,7 @@ li:hover {
   overflow: hidden;
 }
 
-/* !PLAYER */
+/* !====================== PLAYER ====================== */
 
 #player {
   height: var(--player-height);
@@ -414,10 +398,7 @@ li:hover {
   color: #a3a3a3;
   display: flex;
   align-items: center;
-
   gap: 7px;
-
-  /* background-color: yellow; */
 }
 
 #player .song-description {
@@ -462,8 +443,6 @@ li:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  /* background-color: green; */
 }
 
 #player .button-media {
@@ -506,18 +485,18 @@ li:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-grow: ;
-  /* background-color: blue; */
 }
 
 #player .fa-list:hover {
   color: white;
   cursor: pointer;
 }
+
 #player .fa-display:hover {
   color: white;
   cursor: pointer;
 }
+
 #player .fa-volume-high:hover {
   color: white;
   cursor: pointer;
@@ -540,7 +519,7 @@ li:hover {
   cursor: pointer;
 }
 
-/* ? ========= mobile-s view ========= */
+/* ? ================== mobile-s view ==================*/
 
 @media screen and (min-width: 639px) {
   :root {
@@ -604,7 +583,7 @@ li:hover {
     display: block;
   }
 
-  /* ^PLAYER */
+  /* ^========= PLAYER =========*/
 
   #player .current-song {
     display: block;
@@ -615,10 +594,10 @@ li:hover {
   }
 }
 
-/* ?-----mobile-md view----- */
+/* ?================== mobile-md view================== */
 
 @media screen and (min-width: 878px) {
-  /* ^MAIN-CONTENT */
+  /* ^====== MAIN-CONTENT ======*/
 
   #main-content .daily-mix {
     display: block;
@@ -632,14 +611,14 @@ li:hover {
     width: 23%;
   }
 
-  /* ^PLAYER */
+  /* ^======== PLAYER ========*/
 
   #player .love-song {
     display: block;
   }
 }
 
-/* ?mobile-lg view  */
+/* ?================== mobile-lg view ================== */
 
 @media screen and (min-width: 1140px) {
   #main-content .daily-mix.circle {
