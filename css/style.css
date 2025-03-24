@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: , arial, sans-serif;
 }
 
 img {
@@ -208,6 +208,10 @@ li:hover {
   border-radius: 50%;
 }
 
+#sidebar .user:hover {
+  cursor: pointer;
+}
+
 #sidebar .profile {
   color: #a3a3a3;
 }
@@ -287,6 +291,7 @@ li:hover {
 #main-content .main-content-bottom h3 {
   color: white;
   margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 #main-content .main-content-bottom .list-option {
@@ -340,8 +345,9 @@ li:hover {
   position: absolute;
   top: 25%;
   text-align: center;
-  /* background: #00000022; */
+  background: #00000022;
   cursor: pointer;
+  z-index: 1;
 }
 
 #main-content .card-content {
@@ -431,6 +437,16 @@ li:hover {
   flex-direction: column;
 }
 
+#player .fa-heart:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#player .fa-folder:hover {
+  color: white;
+  cursor: pointer;
+}
+
 #player .sinister-xs {
   width: 30px;
 }
@@ -474,6 +490,11 @@ li:hover {
   width: 30%;
 }
 
+#player .exterior-line:hover .interior-line {
+  background-color: limegreen;
+  cursor: pointer;
+}
+
 #player .settings {
   color: #a3a3a3;
   display: flex;
@@ -481,6 +502,19 @@ li:hover {
   gap: 10px;
   flex-grow: ;
   /* background-color: blue; */
+}
+
+#player .fa-list:hover {
+  color: white;
+  cursor: pointer;
+}
+#player .fa-display:hover {
+  color: white;
+  cursor: pointer;
+}
+#player .fa-volume-high:hover {
+  color: white;
+  cursor: pointer;
 }
 
 #player .exterior-volume {
@@ -493,6 +527,11 @@ li:hover {
   height: 3px;
   width: 22px;
   background-color: #a3a3a3;
+}
+
+#player .exterior-volume:hover .interior-volume {
+  background-color: limegreen;
+  cursor: pointer;
 }
 
 /* ? ========= mobile-s view ========= */
